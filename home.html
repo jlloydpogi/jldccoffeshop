@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        /* Include the same CSS styles as in contact.html */
+        body {
+            background-image: url('br.jpg');
+            background-size: 100%;
+            background-position: center;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6b4f4f;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 54px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slide-in 1s ease-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 56px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            transition: text-shadow 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.7);
+        }
+
+        nav ul li a:active {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        main {
+            padding: 50px;
+            font-family: 'Roboto', Arial, sans-serif;
+            animation: fade-in 2s ease-in;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 36px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            animation: fade-in 2s ease-in;
+        }
+
+        p {
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            animation: slide-up 2s ease-in-out;
+        }
+
+        a {
+            color: #6b4f4f;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            transition: text-shadow 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+            color: #4b2f2f;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Keyframe animations */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slide-in {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slide-up {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Coffee Shop</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Coffee.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Welcome to Our Coffee Shop</h1>
+            <p>Discover the finest coffee blends and experience a cozy atmosphere. Whether you're here for a quick coffee break or to catch up with friends, we have something for everyone.</p>
+            <p>Check out our <a href="Coffee.html">Products</a> and feel free to <a href="contact.html">Contact Us</a> for any inquiries.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee Shop</p>
+    </footer>
+</body>
+</html>

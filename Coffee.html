@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coffee Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5deb3; /* Light brown background color */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6b4f4f;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #b12704;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Additional styling for the navbar */
+        .navbar {
+            background-color: #6b4f4f;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Search input focus animation */
+        .search-bar input[type="text"]:focus {
+            border-color: #ff7f50; /* Change border color on focus */
+            transition: border-color 0.3s ease-in-out; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Coffee Shop</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product">
+                <img src="coffee1.jpg" alt="Coffee 1">
+                <h3>Espresso</h3>
+                <p>Rich and creamy espresso.</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="product">
+                <img src="coffee2.jpg" alt="Coffee 2">
+                <h3>Latte</h3>
+                <p>Smooth latte with a hint of vanilla.</p>
+                <p class="price">$6.00</p>
+            </div>
+            <!-- Add more products as needed -->
+            <!-- Example products -->
+            <div class="product">
+                <img src="coffee3.jpg" alt="Coffee 3">
+                <h3>Cappuccino</h3>
+                <p>Frothy cappuccino with cinnamon sprinkle.</p>
+                <p class="price">$5.50</p>
+            </div>
+            <div class="product">
+                <img src="coffee4.jpg" alt="Coffee 4">
+                <h3>Mocha</h3>
+                <p>Indulgent mocha with chocolate drizzle.</p>
+                <p class="price">$6.50</p>
+            </div>
+            <div class="product">
+                <img src="coffee5.jpg" alt="Coffee 5">
+                <h3>Americano</h3>
+                <p>Classic americano with a bold flavor.</p>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="product">
+                <img src="coffee6.jpg" alt="Coffee 6">
+                <h3>Macchiato</h3>
+                <p>Macchiato with a caramel twist.</p>
+                <p class="price">$5.50</p>
+            </div>
+            <div class="product">
+                <img src="coffee7.jpg" alt="Coffee 7">
+                <h3>Flat White</h3>
+                <p>Smooth and velvety flat white.</p>
+                <p class="price">$6.00</p>
+            </div>
+            <div class="product">
+                <img src="coffee8.jpg" alt="Coffee 8">
+                <h3>Affogato</h3>
+                <p>Decadent affogato with a scoop of vanilla ice cream.</p>
+                <p class="price">$7.00</p>
+            </div>
+            <!-- Additional products -->
+            <div class="product">
+                <img src="coffee9.jpg" alt="Coffee 9">
+                <h3>Irish Coffee</h3>
+                <p>Classic Irish coffee with whiskey.</p>
+                <p class="price">$7.50</p>
+            </div>
+            <div class="product">
+                <img src="coffee10.jpg" alt="Coffee 10">
+                <h3>Vienna Coffee</h3>
